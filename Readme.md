@@ -5,7 +5,7 @@ to simplify the process of method verification.
 The user interface of MV-GUI is shown 
 in figure below.
 
-(![](/Users/Priyanka/Desktop/GUI/Aug2022/Figures/GUI_new.png)
+(![](/Figures/GUI_new.png)
 
 
 and has a single page layout, 
