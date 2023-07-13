@@ -1,14 +1,12 @@
 # -*- mode: python ; coding: utf-8 -*-
 
-
 block_cipher = None
-
 
 a = Analysis(
     ['MyApp_using_pyqt_ver02.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[(r'C:\Users\psk00\Downloads\Priyanka\MV-GUI\validation_template.docx', '.'),],  # Use raw string literal
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -19,6 +17,7 @@ a = Analysis(
     cipher=block_cipher,
     noarchive=False,
 )
+
 pyz = PYZ(a.pure, a.zipped_data, cipher=block_cipher)
 
 exe = EXE(
@@ -26,7 +25,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='MyApp_using_pyqt_ver02',
+    name='Report Generator',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -37,7 +36,9 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon=r'C:\Users\psk00\Downloads\Priyanka\MV-GUI\Insel_logo.ico',  # Use raw string literal
 )
+
 coll = COLLECT(
     exe,
     a.binaries,
@@ -46,5 +47,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='MyApp_using_pyqt_ver02',
+    name='Report Generator',
 )
